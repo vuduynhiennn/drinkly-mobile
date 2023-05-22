@@ -1,12 +1,12 @@
 import { View, Text, Button, TouchableOpacity, SafeAreaView } from "react-native";
-import WomanDrinkingWater from "../../components/svgComponents/WomanDrinkingWater";
+import WomanDrinkingWater from "../../components/svg-components/WomanDrinkingWater";
 import { bg_5DCCFC, center, color_625D5D, color_FFFFFF, flex1, fs14, fs24, fw700, justify_bw, mbt60, mt90, mt_120, px20, py20,  py30,  radius5, text_center, uppercase 
 } from "../../styles/customStyle";
 
 import homeScreenData from './home.json';
 import { useState } from "react";
-import WomanPaying from "../../components/svgComponents/WomanPaying";
-import WomanShopping from "../../components/svgComponents/WomanShopping";
+import WomanPaying from "../../components/svg-components/WomanPaying";
+import WomanShopping from "../../components/svg-components/WomanShopping";
 
 let indexOfHomeScreen = 1
 const Home = ({navigation} : any) => {
