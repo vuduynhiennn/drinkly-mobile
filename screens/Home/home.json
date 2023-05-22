@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "component": "<WomanDrinkingWater />",
+        "title": "We provide best quality water",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+        "buttonText": "NEXT"
+    },
+    {
+        "id": 2,
+        "component": "<WomanShopping />",
+        "title": "Schedule when you want your water delivered",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+        "buttonText": "NEXT"
+
+    },
+    {
+        "id": 3,
+        "component": "<WomanPaying />",
+        "title": "Fast and responsibily delivery ",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+        "buttonText": "GET STARTED"
+
+    }
+]
