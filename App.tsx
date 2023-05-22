@@ -1,9 +1,14 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import { Text, View } from 'react-native';
 
 function App(): JSX.Element {
   return (
-    <NavigationContainer>{/* Rest of your app code */}</NavigationContainer>
+    <NavigationContainer>
+      <View>
+        <Text>hahaha</Text>
+      </View>
+    </NavigationContainer>
   );
 }
 
