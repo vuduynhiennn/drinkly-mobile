@@ -4,8 +4,14 @@ import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
-// For react-native-screens library
+// for react-native-screens library
 import android.os.Bundle;
+// for react-native-splash-screen >= 0.3.1
+import org.devio.rn.splashscreen.SplashScreen;
+
+
+// for react-native-splash-screen >= 0.3.1
+import org.devio.rn.splashscreen.SplashScreen;
 
 public class MainActivity extends ReactActivity {
 
@@ -18,10 +24,11 @@ public class MainActivity extends ReactActivity {
     return "drinkly";
   }
   /**
-   * For react-native-screens library
+   * For react-native-screens, react-native-splash-screen libraries
    */
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    SplashScreen.show(this);
     super.onCreate(null);
   }
 
