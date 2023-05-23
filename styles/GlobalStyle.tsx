@@ -18,7 +18,18 @@ const globalStyle= StyleSheet.create({
     color_2E2E2E: {
         color: "#2E2E2E"
     },
-
+    fs20: {
+        fontSize: 20
+    },
+    mt35: {
+        marginTop: 35
+    },
+    mt10: {
+        marginTop: 10
+    },
+    fw500: {
+        fontWeight: "500"
+    },
     // for background
     bg_5DCCFC: {
         backgroundColor: "#5DCCFC"

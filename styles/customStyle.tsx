@@ -34,5 +34,10 @@ export const {
     mt60,
     mt120,
     bg_FFFFFF,
-    color_2E2E2E
+    color_2E2E2E,
+    color_5DCCFC,
+    fs20,
+    mt35,
+    mt10,
+    fw500
 }  = globalStyle

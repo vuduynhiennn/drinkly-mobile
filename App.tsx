@@ -4,6 +4,8 @@ import SplashScreen from 'react-native-splash-screen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Authencation from './screens/authencation/authencation';
 import Onboarding from './screens/onboarding/onboarding';
+import Login from './screens/login/login';
+import Signup from './screens/signup/signup';
 
 
 
@@ -24,12 +26,22 @@ function App(): JSX.Element {
         }}
       >
         <Stack.Screen name="Onboarding"
-                      component={Onboarding} 
-        
+          component={Onboarding}
+
         />
-        <Stack.Screen name="Authencation" 
-                      component={Authencation} 
-        
+        <Stack.Screen name="Authencation"
+          component={Authencation}
+
+        />
+
+        <Stack.Screen name="Login"
+          component={Login}
+
+        />
+
+        <Stack.Screen name="Signup"
+          component={Signup}
+
         />
       </Stack.Navigator>
     </NavigationContainer>
