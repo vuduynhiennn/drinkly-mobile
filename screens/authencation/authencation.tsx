@@ -44,7 +44,7 @@ const Authencation = ({navigation}: any): JSX.Element => {
 
                             <TouchableOpacity
                                 style={{ paddingBottom: 20 }}
-                                onPress={() => Alert.alert("Bấm ít thôi đang build")}
+                                onPress={() => navigateTo(navigation, "TabNavigator")}
                             >
                                 <Text style={[color_FFFFFF, text_center]}>Continue as Guest</Text>
                             </TouchableOpacity>
