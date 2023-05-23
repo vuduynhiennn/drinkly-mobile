@@ -15,6 +15,9 @@ const globalStyle= StyleSheet.create({
     color_FFFFFF: {
         color: "#FFFFFF"
     },
+    color_2E2E2E: {
+        color: "#2E2E2E"
+    },
 
     // for background
     bg_5DCCFC: {
@@ -22,6 +25,9 @@ const globalStyle= StyleSheet.create({
     },
     bg_pink: {
         backgroundColor: "pink"
+    },
+    bg_FFFFFF: {
+        backgroundColor: "#FFFFFF"
     },
 
     // for font weight

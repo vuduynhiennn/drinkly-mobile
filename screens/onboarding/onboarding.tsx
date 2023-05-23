@@ -64,19 +64,19 @@ const Onboarding = ({ navigation }: any) => {
     return (
         <SafeAreaView style={[flex1, justify_bw, px20]}>
 
-            <TouchableOpacity style={[pAbs, t40, r20]}
+            <TouchableOpacity style={[pAbs, t40, r20, {flex: 1}]}
                 onPress={() => handleNext("back")}
             >
                 {ArrowLeftView}
             </TouchableOpacity>
 
-            <View style={[mt120, mbt60]}
+            <View style={[mt120, mbt60, {flex: 3}]}
             >
 
                 {svgComponent}
             </View>
 
-            <View style={[mt_120]}>
+            <View style={[mt_120, {flex: 2}]}>
                 <Text style={[fs24, color_625D5D, fw700, text_center]}
                 >
                     {title}
