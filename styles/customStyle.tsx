@@ -24,5 +24,13 @@ export const {
     text_center,
     mt90,
     mt_120,
-    py30
+    py30,
+    hidden,
+    pAbs,
+    l0,
+    r0,
+    t40,
+    r20,
+    mt60,
+    mt120
 }  = globalStyle

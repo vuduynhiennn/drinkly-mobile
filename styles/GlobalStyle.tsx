@@ -95,6 +95,30 @@ const globalStyle= StyleSheet.create({
     // for text position
     text_center: {
         textAlign: "center"
+    },
+    hidden: {
+        overflow: "hidden"
+    },
+    pAbs: {
+        position: "absolute"
+    },
+    l0: {
+        left: 0
+    },
+    r0: {
+        right: 0,
+    },
+    t40: {
+        top: 40
+    },
+    r20: {
+        right: 20
+    },
+    mt60: {
+        marginTop: 60
+    },
+    mt120: {
+        marginTop: 120
     }
 })
 
