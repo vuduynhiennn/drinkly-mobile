@@ -6,6 +6,7 @@ import Authencation from './screens/authencation/authencation';
 import Onboarding from './screens/onboarding/onboarding';
 import Login from './screens/login/login';
 import Signup from './screens/signup/signup';
+import ForgetPassword from './screens/forget-password/forgetPassword';
 
 
 
@@ -41,6 +42,10 @@ function App(): JSX.Element {
 
         <Stack.Screen name="Signup"
           component={Signup}
+
+        />
+           <Stack.Screen name="ForgetPassword"
+          component={ForgetPassword}
 
         />
       </Stack.Navigator>

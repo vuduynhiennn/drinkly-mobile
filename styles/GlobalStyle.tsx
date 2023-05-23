@@ -27,6 +27,9 @@ const globalStyle= StyleSheet.create({
     mt10: {
         marginTop: 10
     },
+    direction_row: {
+        flexDirection: "row"
+    },
     fw500: {
         fontWeight: "500"
     },

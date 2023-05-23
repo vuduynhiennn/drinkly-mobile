@@ -58,7 +58,7 @@ const Signup = ({navigation}: any) => {
             </View>
 
             <View style={{marginTop: 52}}>
-                <TouchableOpacity style={[bg_5DCCFC, py20]}>
+                <TouchableOpacity style={[bg_5DCCFC, py20, {borderRadius: 3}]}>
                     <Text style={[uppercase, fs14, color_FFFFFF, text_center]}>
                         Create an account
                     </Text>

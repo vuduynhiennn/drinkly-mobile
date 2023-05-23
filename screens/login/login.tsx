@@ -38,14 +38,16 @@ const Login = ({navigation}: any) => {
             </View>
 
             <View>
-                <TouchableOpacity > 
+                <TouchableOpacity 
+                    onPress={() => navigation.navigate("ForgetPassword")}
+                > 
                     <Text style={[fs14, fw500, {textAlign: "right", marginTop: 20}]}>Forgot Password?</Text>
                 </TouchableOpacity>
             </View>
         </View>
 
         <View style={mt90}>
-            <TouchableOpacity style={[bg_5DCCFC, py20]}>
+            <TouchableOpacity style={[bg_5DCCFC, py20, {borderRadius: 3}]}>
                 <Text style={[uppercase, fs14, color_FFFFFF, text_center]}>
                     Login
                 </Text>
@@ -61,7 +63,7 @@ const Login = ({navigation}: any) => {
                 </TouchableOpacity>
             </View>
         </View>
-    </View>
+        </View>
     )
 }
 

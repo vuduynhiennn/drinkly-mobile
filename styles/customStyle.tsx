@@ -39,5 +39,6 @@ export const {
     fs20,
     mt35,
     mt10,
-    fw500
+    fw500,
+    direction_row
 }  = globalStyle
