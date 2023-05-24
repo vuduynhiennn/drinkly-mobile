@@ -70,6 +70,8 @@ const Checkout = () => {
                     </View>
                 </View>
             </View>
+
+            
         </View>
     )
 }
