@@ -29,14 +29,8 @@ const Signup = ({ navigation }: any) => {
                     setMessage('User account created & signed in!')
                 })
                 .catch(error => {
-                    if (error.code === 'auth/email-already-in-use') {
-                        setMessage('That email address is already in use!')
-                    }
-
-                    if (error.code === 'auth/invalid-email') {
-                        setMessage('That email address is invalid!')
-                    }
-                     console.log(error.code)
+                    const parseErrorCode = error.code.split("auth/")[1].split(("-")).join(" ")
+                    setMessage(parseErrorCode)
                 });
     }
 

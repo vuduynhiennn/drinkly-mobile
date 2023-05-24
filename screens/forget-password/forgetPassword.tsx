@@ -12,6 +12,7 @@ const ForgetPassword = ({navigation}: any) => {
     const [message, setMessage] = useState<any>()
     const [title, setTitle] = useState<any>("Reset Your Password")
     const [describe, setDescribe] = useState<any>("We will send you an email contain reset password")
+    const [direct, setDirect] = useState<any>("Reset Password")
 
 
     const auth = getAuth(firebaseApp);
@@ -22,22 +23,16 @@ const ForgetPassword = ({navigation}: any) => {
                 setMessage(" ")
                 setTitle("Please check your email");
                 setDescribe("Email was sent successfully. Check your spam email if you don't see it")
+                setDirect("Navigate to Login after 3 seconds")
+                setTimeout(() => {
+                    navigation.navigate("Login")
+                }, 2000)
             })
             .catch(error => {
-                switch (error.code) {
-                    case "auth/missing-email":
-                        setMessage("Missing Email")
-                        break;
-                    
-                    case "auth/invalid-email":
-                        setMessage("Invalid Email")
-                        break;
-                    default:
-                        break;
-                }
+                const parseErrorCode = error.code.split("auth/")[1].split(("-")).join(" ")
+                setMessage(parseErrorCode)
             })
     }
-
 
     return (
         <View style={[px20, py20]}>
@@ -74,14 +69,14 @@ const ForgetPassword = ({navigation}: any) => {
         </View>
         
 
-        <Text style={{ position: "absolute", top: 455, left: 20, fontSize: 12, color: "#f58142", fontStyle: "italic" }}> {message}</Text>
+        <Text style={{ position: "absolute", top: 455, left: 20, fontSize: 12, color: "#f58142", fontStyle: "italic", textTransform: "capitalize"}}> {message}</Text>
         
         <View style={{marginTop: 62}}>
                 <TouchableOpacity style={[bg_5DCCFC, py20, {borderRadius: 3}]}
                     onPress={onResetPassword}
                 >
                     <Text style={[uppercase, fs14, color_FFFFFF, text_center]}>
-                        Reset Password
+                        {direct}
                     </Text>
                 </TouchableOpacity>
 

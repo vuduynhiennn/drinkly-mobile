@@ -21,23 +21,8 @@ const Login = ({navigation}: any) => {
                 console.log("signed in")
             })
             .catch(error => {
-                setMessage(error.code)
-                switch (error.code) {
-                    case "auth/missing-email":
-                        setMessage("Mising email");
-                        break;
-
-                    case "auth/missing-password": 
-                        setMessage("Missing password");
-                        break;
-
-                    case "auth/wrong-password":
-                        setMessage("Wrong password");
-                        break;
-                    default:
-                        break;
-                }
-                console.log(error)
+                const parseErrorCode = error.code.split("auth/")[1].split(("-")).join(" ")
+                setMessage(parseErrorCode)
             }) 
     }
     
