@@ -23,7 +23,8 @@ const ForgetPassword = ({navigation}: any) => {
                 setMessage(" ")
                 setTitle("Please check your email");
                 setDescribe("Email was sent successfully. Check your spam email if you don't see it")
-                setDirect("Navigate to Login after 3 seconds")
+                setDirect("Navigate to Login after 3 seconds");
+                
                 setTimeout(() => {
                     navigation.navigate("Login")
                 }, 2000)

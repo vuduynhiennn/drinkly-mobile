@@ -1,6 +1,5 @@
-import { Alert, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
-import { bg_5DCCFC, bg_FFFFFF, bg_pink, center, color_2E2E2E, color_FFFFFF, flex1, fs14, fs24, fw700, justify_bw, mbt60, pAbs, px20, py20, r20, radius5, t40, text_center, uppercase } from "../../styles/customStyle"
+import { ImageBackground, Text, TouchableOpacity, View } from "react-native"
+import {bg_FFFFFF, center, color_2E2E2E, color_FFFFFF, flex1, fs14, fs24, fw700, justify_bw, py20, radius5, text_center, uppercase } from "../../styles/customStyle"
 import navigateTo from '../../utils/navigateTo'
 
 const Authencation = ({navigation}: any): JSX.Element => {

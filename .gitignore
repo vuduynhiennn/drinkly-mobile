@@ -64,3 +64,7 @@ package-lock.json
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
+
+src/config/firebase.ts
+
+your_key_name.keystore

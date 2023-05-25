@@ -2,13 +2,19 @@ import { Alert, Text, TextInput, TouchableOpacity, View } from "react-native"
 import ArrowLeft from "../../assets/icons/ArrowLeft"
 import { bg_5DCCFC, center, color_5DCCFC, color_625D5D, color_FFFFFF, direction_row, fs14, fs20, fw500, fw700, justify_bw, mbt40, mt10, mt35, mt60, mt90, px20, py20, text_center, uppercase } from "../../styles/customStyle"
 import navigateTo from "../../utils/navigateTo"
-import { useEffect, useState } from "react"
-import { Auth, createUserWithEmailAndPassword, getAuth } from "firebase/auth"
+import { useContext, useEffect, useState } from "react"
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth"
+
 
 import firebaseApp from '../../config/firebase'
+import { userContext } from "../../../App"
 
 const Signup = ({ navigation }: any) => {
     const auth = getAuth(firebaseApp);
+
+    const { userInfor } = useContext(userContext)
+
+    console.log("sign up screen: ", userInfor)
 
     const [name, setName] = useState<String>("");
     const [email, setEmail] = useState<any>("");
