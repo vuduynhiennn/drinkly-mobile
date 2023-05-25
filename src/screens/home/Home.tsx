@@ -89,7 +89,7 @@ const Home = () => {
           <View style={{flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between"}}>
 
             {/* item  */}
-            <View style={{width: 180}}>
+            <View style={{width: 180, marginBottom: 15}}>
               <ImageBackground
                 source={require("../../assets/images//deomo-product-1.png")}
                 imageStyle={{borderRadius: 10}}
@@ -110,7 +110,7 @@ const Home = () => {
                 </ImageBackground>
             </View>
 
-            <View style={{width: 180}}>
+            <View style={{width: 180, marginBottom: 15}}>
               <ImageBackground
                 source={require("../../assets/images//deomo-product-1.png")}
                 imageStyle={{borderRadius: 10}}
@@ -131,7 +131,7 @@ const Home = () => {
                 </ImageBackground>
             </View>
 
-            <View style={{width: 180}}>
+            <View style={{width: 180, marginBottom: 15}}>
               <ImageBackground
                 source={require("../../assets/images//deomo-product-1.png")}
                 imageStyle={{borderRadius: 10}}
@@ -152,7 +152,7 @@ const Home = () => {
                 </ImageBackground>
             </View>
 
-            <View style={{width: 180}}>
+            <View style={{width: 180, marginBottom: 15}}>
               <ImageBackground
                 source={require("../../assets/images//deomo-product-1.png")}
                 imageStyle={{borderRadius: 10}}
@@ -173,47 +173,6 @@ const Home = () => {
                 </ImageBackground>
             </View>
 
-            <View style={{width: 180}}>
-              <ImageBackground
-                source={require("../../assets/images//deomo-product-1.png")}
-                imageStyle={{borderRadius: 10}}
-              >
-                <Pressable style={{position: "relative"}}>
-                  <View style={{position:"absolute", right: 15, top: 6}}>
-                    <HeartLinear />
-                  </View>
-                  <View style={{position:"absolute", right: 16, top: 15}}>
-                    <HeartIcon width="28" height="28"/>
-                  </View>
-                </Pressable>
-
-                <Pressable style={{backgroundColor: "#E5E5E5", marginTop : 200, paddingHorizontal: 5, paddingVertical: 12, borderBottomEndRadius: 8, borderBottomStartRadius: 8}}>
-                  <Text style={{fontSize: 14, fontWeight: "700", color: "black", marginBottom: 5}}>Drips Spring Water</Text>
-                  <Text style={{fontSize: 11, color: "#484848"}}>$100</Text>
-                </Pressable>
-                </ImageBackground>
-            </View>
-
-            <View style={{width: 180}}>
-              <ImageBackground
-                source={require("../../assets/images//deomo-product-1.png")}
-                imageStyle={{borderRadius: 10}}
-              >
-                <Pressable style={{position: "relative"}}>
-                  <View style={{position:"absolute", right: 15, top: 6}}>
-                    <HeartLinear />
-                  </View>
-                  <View style={{position:"absolute", right: 16, top: 15}}>
-                    <HeartIcon width="28" height="28"/>
-                  </View>
-                </Pressable>
-
-                <Pressable style={{backgroundColor: "#E5E5E5", marginTop : 200, paddingHorizontal: 5, paddingVertical: 12, borderBottomEndRadius: 8, borderBottomStartRadius: 8}}>
-                  <Text style={{fontSize: 14, fontWeight: "700", color: "black", marginBottom: 5}}>Drips Spring Water</Text>
-                  <Text style={{fontSize: 11, color: "#484848"}}>$100</Text>
-                </Pressable>
-                </ImageBackground>
-            </View>
           
             {/* item end  */}
 

@@ -68,3 +68,7 @@ package-lock.json
 src/config/firebase.ts
 
 your_key_name.keystore
+.env
+
+firebases.ts
+firebase.ts
