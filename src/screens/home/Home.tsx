@@ -1,12 +1,12 @@
 import { View, Text, StatusBar, TouchableOpacity, ImageBackground, ScrollView, Pressable, SafeAreaView } from 'react-native'
 import React, { useState } from 'react'
 import { TextInput } from 'react-native'
-import { flex1, px20, py20 } from '../../styles/customStyle'
 import SearchIcon from '../../assets/icons/SearchIcon'
 import HeartIcon from '../../assets/icons/HeartIcon'
 import HeartLinear from '../../assets/icons/HearTLinear'
+import navigateTo from '../../utils/navigateTo'
 
-const Home = () => {
+const Home = ({navigation}: any) => {
 
   const [searchContent, setSearchContent] = useState("Search Something...")
 
@@ -103,7 +103,9 @@ const Home = () => {
                   </View>
                 </Pressable>
 
-                <Pressable style={{backgroundColor: "#E5E5E5", marginTop : 200, paddingHorizontal: 5, paddingVertical: 12, borderBottomEndRadius: 8, borderBottomStartRadius: 8}}>
+                <Pressable style={{backgroundColor: "#E5E5E5", marginTop : 200, paddingHorizontal: 5, paddingVertical: 12, borderBottomEndRadius: 8, borderBottomStartRadius: 8}}
+                           onPress={() => navigateTo(navigation, "Product")}
+                >
                   <Text style={{fontSize: 14, fontWeight: "700", color: "black", marginBottom: 5}}>Drips Spring Water</Text>
                   <Text style={{fontSize: 11, color: "#484848"}}>$100</Text>
                 </Pressable>
@@ -151,28 +153,6 @@ const Home = () => {
                 </Pressable>
                 </ImageBackground>
             </View>
-
-            <View style={{width: 180, marginBottom: 15}}>
-              <ImageBackground
-                source={require("../../assets/images//deomo-product-1.png")}
-                imageStyle={{borderRadius: 10}}
-              >
-                <Pressable style={{position: "relative"}}>
-                  <View style={{position:"absolute", right: 15, top: 6}}>
-                    <HeartLinear />
-                  </View>
-                  <View style={{position:"absolute", right: 16, top: 15}}>
-                    <HeartIcon width="28" height="28"/>
-                  </View>
-                </Pressable>
-
-                <Pressable style={{backgroundColor: "#E5E5E5", marginTop : 200, paddingHorizontal: 5, paddingVertical: 12, borderBottomEndRadius: 8, borderBottomStartRadius: 8}}>
-                  <Text style={{fontSize: 14, fontWeight: "700", color: "black", marginBottom: 5}}>Drips Spring Water</Text>
-                  <Text style={{fontSize: 11, color: "#484848"}}>$100</Text>
-                </Pressable>
-                </ImageBackground>
-            </View>
-
           
             {/* item end  */}
 

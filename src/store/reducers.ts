@@ -1,3 +1,5 @@
+import { login, logout } from "./action";
+
 export const USER_STATE_INIT = {
     displayName: "",
     email: "",
@@ -7,7 +9,7 @@ export const USER_STATE_INIT = {
 
 export const userReducer = (state: any, action: any) => {
     switch (action.type) {
-        case "LOGIN":
+        case login:
             const { email, displayName, photoURL } = action.payload
             state.displayName = displayName;
             state.email = email;
@@ -16,7 +18,7 @@ export const userReducer = (state: any, action: any) => {
             
             return state
 
-        case "LOGOUT":
+        case logout:
             state.displayName = "";
             state.email = "";
             state.photoURL = "";

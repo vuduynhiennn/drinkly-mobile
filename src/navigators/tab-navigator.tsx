@@ -10,6 +10,7 @@ import FavoriteIcon from '../assets/icons/FavoriteIcon';
 import Profile from '../screens/profile/Profile';
 import ProfileIcon from '../assets/icons/ProfileIcon';
 import Checkout from '../screens/checkout/checkout';
+import Product from '../screens/product/product';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +19,6 @@ function TabNavigator() {
     theme.colors.secondaryContainer = "transperent"
 
     return (
-
         <Tab.Navigator
             screenOptions={{
                 headerShown: false,
@@ -27,8 +27,9 @@ function TabNavigator() {
                     height: 75,
                     position: "absolute",
                     bottom: 0
-                }
-            }}
+                },
+                tabBarHideOnKeyboard: true
+            }}   
         >
             <Tab.Screen name="Home"
                 component={Home}
@@ -65,6 +66,11 @@ function TabNavigator() {
             <Tab.Screen
                 name="Checkout"
                 component={Checkout}
+                options={{ tabBarButton: (props) => null }}
+            />
+              <Tab.Screen
+                name="Product"
+                component={Product}
                 options={{ tabBarButton: (props) => null }}
             />
         </Tab.Navigator>

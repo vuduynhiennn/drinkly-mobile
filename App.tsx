@@ -5,6 +5,7 @@ import { USER_STATE_INIT, userReducer } from './src/store/reducers';
 import RootNavigator from './src/navigators';
 
 export const userContext = createContext<any>([])
+export const productContxt = createContext<any>([])
 
 function App(): JSX.Element {
   const [userInfor, userDispatch] = useReducer(userReducer, USER_STATE_INIT);
