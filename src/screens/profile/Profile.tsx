@@ -138,8 +138,8 @@ const Profile = () => {
         : null
       }
 
-      <KeyboardAvoidingView>
-        <View style={{ position: "absolute", bottom: -240 }}>
+      <KeyboardAvoidingView style={{position: "absolute", top: 700}}>
+        <View>
 
           <View style={{ marginHorizontal: 15 }}>
             <TouchableOpacity

@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "title": "Quần xịt nam cao cấp dành cho nữ giới",
+        "description": "Bộ Quần Áo Mặc Nhà Thể Thao Nam Mùa Hè Mát Mẻ Cao Cấp Thời Trang ZERO",
+        "price": 1000,
+        "quantity": 100,
+        "image": "https://aristino.com/Data/ResizeImage/images/product/boxer/abx073/quan-lot-nam-aristino-abx073x500x500x4.webp"
+    },
+    {
+        "id": 2,
+        "title": "Quần xịt nữ cao cấp dành cho nam giới",
+        "description": "đúng mẫu,đúng size ,bộ đồ màu xám rẻ hơn 25k nhưng lại chất đẹp mát hơn bộ màu trắng.nói chung mua 2 lần ok.khá đẹp .ck mình 1m75 nặng 73kg munh đặt size XL chưa mặc thử chưa biết rộng hay vừa",
+        "price": 1000,
+        "quantity": 200,
+        "image": "https://mialala.vn/media/product/250_2926_frame_logo_ai_790x988_0.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Quần xịt người già cao cấp dành cho trẻ nhỏ",
+        "description": "Shop đóng gói cẩn thận giao hàng siêu nhanh, săn sale hôm 25/3 mà 27/3 đã nhận được hàng. Tất cả đồ đều đẹp, chất vải dày dặn, sờ rất mát tay. Quần đùi chất nỉ da cá, mặc vào tầm giờ hoặc sang thu sẽ mát còn sang hè có hơi nóng chút. Nên mua nha",
+        "price": 2000,
+        "quantity": 100,
+        "image": "https://www.sporter.vn/wp-content/uploads/2018/07/chon-quan-lot-nu.jpg"
+
+    },
+    {
+        "id": 4,
+        "title": "Áo lót nữ không dây dành cho người muốn áo lót nữ có dây",
+        "description": "Shop đóng gói cẩn thận giao hàng siêu nhanh, săn sale hôm 25/3 mà 27/3 đã nhận được hàng. Tất cả đồ đều đẹp, chất vải dày dặn, sờ rất mát tay. Quần đùi chất nỉ da cá, mặc vào tầm giờ hoặc sang thu sẽ mát còn sang hè có hơi nóng chút. Nên mua nha",
+        "price": 2000,
+        "quantity": 100,
+        "image": "https://corelev.com/wp-content/uploads/2021/11/ao-nguc-khong-day-6.png"
+
+    }
+]

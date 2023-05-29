@@ -4,14 +4,19 @@ import ArrowBottom from "../../assets/icons/ArrowBottom"
 import MinusIcon from "../../assets/icons/MinusIcon"
 import PlusIcon from "../../assets/icons/plusIcon"
 import ArrowLeft from "../../assets/icons/ArrowLeft"
+import { useState } from "react"
 
-const Product = () => {
+const Product = ({route, navigation}: any) => {
+    const { image, title, description, price} = route.params
+
+    const [quantity, setQuantity] = useState(1)
+
     return (
         <SafeAreaView>
             <ScrollView>
                 <View>
                     <ImageBackground
-                        source={require("../../assets//images/deomo-product-1.png")}
+                        source={{uri: image}}
                         style={{ height: 300 }}
                     >
                     </ImageBackground>
@@ -22,16 +27,19 @@ const Product = () => {
                 <View style={{ marginHorizontal: 15, marginTop: 30 }}>
                     <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between" }}>
                         <View style={{ width: "59%" }}>
-                            <Text style={{ fontSize: 18, fontWeight: "700", color: "#000000" }}>Drips Spring water lorem studio.h</Text>
-                            <Text style={{ fontSize: 19, color: "#000000", marginTop: 10 }}>$100</Text>
+                            <Text style={{ fontSize: 18, fontWeight: "700", color: "#000000" }}>
+                                {title}
+                            </Text>
+                            <Text style={{ fontSize: 19, color: "#000000", marginTop: 10 }}>
+                                {`$${price}`}
+                            </Text>
                         </View>
                         <View>
                             <Text style={{ fontSize: 9, color: "#7D7D7D", marginTop: 10 }}>(Available In Stock)</Text>
                         </View>
                     </View>
                     <Text style={{ fontSize: 13, marginTop: 10 }}>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                    
+                       {description}
                     </Text>
                     <View>
                         <View style={{ flexDirection: "row", gap: 5, marginTop: 15 }}>
@@ -58,13 +66,24 @@ const Product = () => {
                     <View>
                         <Text style={{ color: "#000000", fontWeight: "600", marginBottom: 0 }}>Quantity</Text>
                         <View style={{ flexDirection: "row", gap: 15, alignItems: "center" , marginRight: 15}}>
-                            <TouchableOpacity style={{ marginTop: 15, backgroundColor: "rgba(227, 227, 227, 1)", width: 30, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 7 }}>
+
+                            <TouchableOpacity style={{ marginTop: 15, backgroundColor: "rgba(227, 227, 227, 1)", width: 30, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 7 }}
+                                onPress={() => {
+                                    if (quantity > 1) {
+                                        setQuantity(quantity -1)
+                                    }
+                                }}
+                            >
                                 <MinusIcon />
                             </TouchableOpacity>
 
-                            <Text style={{ marginTop: 15, fontSize: 16, marginHorizontal: 7 }}> 1</Text>
+                            <Text style={{ marginTop: 15, fontSize: 16, marginHorizontal: 7 }}>
+                                {quantity}
+                            </Text>
 
-                            <TouchableOpacity style={{ marginTop: 15, backgroundColor: "rgba(227, 227, 227, 1)", width: 30, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 7 }}>
+                            <TouchableOpacity style={{ marginTop: 15, backgroundColor: "rgba(227, 227, 227, 1)", width: 30, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 7 }}
+                                onPress={() => setQuantity(quantity + 1)}
+                            >
                                 <PlusIcon />
                             </TouchableOpacity>
                         </View>
