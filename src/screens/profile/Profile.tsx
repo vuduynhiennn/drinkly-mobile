@@ -127,6 +127,12 @@ const Profile = () => {
 
       </View>
 
+
+      <View>
+        <Text> Track Order </Text>
+      </View>
+
+
       {isEdtied ?
         <TouchableOpacity style={{ alignSelf: "center", paddingHorizontal: 90, paddingVertical: 14, backgroundColor: "#3FBDF1", borderRadius: 10, marginTop: 25 }}>
           <Text style={{ color: "#FFFFFF", fontSize: 14, fontWeight: "500" }}

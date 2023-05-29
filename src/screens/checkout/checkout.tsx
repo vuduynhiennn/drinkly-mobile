@@ -3,6 +3,7 @@ import TopBarCustom from "../../components/TopBarCustom"
 import { bg_FFFFFF, direction_row, flex1, fs14, fw500, fw700, justify_bw, px20, py20 } from "../../styles/customStyle"
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { useState } from "react";
+import Payment from "../../components/checkout/Payment";
 const Checkout = () => {
 
 
@@ -71,6 +72,7 @@ const Checkout = () => {
                 </View>
             </View>
 
+            <Payment />
             
         </View>
     )
